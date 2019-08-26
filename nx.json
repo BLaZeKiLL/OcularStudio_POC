@@ -1,5 +1,5 @@
 {
-  "npmScope": "electron",
+  "npmScope": "ocular",
   "implicitDependencies": {
     "angular.json": "*",
     "package.json": "*",
@@ -15,6 +15,9 @@
       "tags": []
     },
     "electron": {
+      "tags": []
+    },
+    "js-graph": {
       "tags": []
     }
   }

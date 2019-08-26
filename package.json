@@ -1,24 +1,25 @@
 {
-  "name": "ngxtron",
+  "name": "ocular",
   "version": "0.0.0",
   "license": "MIT",
   "author": {
     "email": "blazeingamer10@gmail.com",
     "name": "Devashish Lal"
   },
-  "description": "Starter project for Angular + Electron + Nx",
+  "description": "visual programming interface for backend node.js",
   "keywords": [
     "Angular",
     "Electron",
-    "Nx",
-    "Starter",
-    "Project"
+    "Nx"
   ],
   "main": "dist/apps/electron/main.js",
   "scripts": {
-    "postinstall": "npm run postinstall:electron && electron-builder install-app-deps",
+    "postinstall": "npm run litegraph:install && npm run postinstall:electron && electron-builder install-app-deps",
     "postinstall:web": "node tools/builders/postinstall-web",
     "postinstall:electron": "node tools/builders/postinstall",
+    "litegraph:install": "npm i ./local/litegraph.js-0.7.1.tgz --save-dev",
+    "litegraph:local:copy": "cp D:/OpenSource/litegraph.js/litegraph.js-0.7.1.tgz ./local/",
+    "litegraph:local:install": "npm run litegraph:local:copy && npm run litegraph:install",
     "ng": "ng",
     "nx": "nx",
     "start": "npm run postinstall:electron && npm-run-all -p ng:serve electron:serve",
@@ -87,6 +88,7 @@
     "electron-reload": "^1.5.0",
     "jest": "24.1.0",
     "jest-preset-angular": "^7.1.1",
+    "litegraph.js": "file:../../OpenSource/litegraph.js/litegraph.js-0.7.1.tgz",
     "npm-run-all": "^4.1.5",
     "prettier": "1.16.4",
     "rxjs": "~6.4.0",
