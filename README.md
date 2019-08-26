@@ -1,14 +1,6 @@
-# Ngxtron
+# Ocular Studio
 
-Starter project for an Angular + Electron + Nx app inspired by [maximegris](https://github.com/maximegris/angular-electron)
-
-This project is setup to make full use of nx and monorepos from the get go
-
-from mordern test tools like jest and cypress to documentation generation using compodoc
-
-Not just limited to angular and electron, with the help of NX you can easliy add React projects, Nest/Express backends, or vanilla node projects
-
-Also with the power to create shared libraries to allow maximum code reusability and these are just some of the features of nx..
+A visual programming interface to create node.js backends
 
 ## Project Structure
 
