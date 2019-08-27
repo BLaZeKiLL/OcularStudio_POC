@@ -10,6 +10,11 @@ export class GraphEditor {
     this.editor = new Editor(id, options);
     this.graph = this.editor.graph;
     this.canvas = this.editor.graphcanvas;
+
+    const editor = this.editor;
+
+    // enable auto resize
+    window.addEventListener("resize", function() { editor.graphcanvas.resize(); } );
   }
 
   public get Editor(): Editor {
