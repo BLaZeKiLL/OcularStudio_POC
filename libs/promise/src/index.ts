@@ -1,1 +1,1 @@
-export * from './lib/promise';
+export * from './lib/jsonfile';
