@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ocular/js-graph": ["libs/js-graph/src/index.ts"]
+      "@ocular/js-graph": ["libs/js-graph/src/index.ts"],
+      "@ocular/project": ["libs/project/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
