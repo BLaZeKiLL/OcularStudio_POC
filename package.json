@@ -81,6 +81,7 @@
     "@nrwl/node": "8.4.6",
     "@nrwl/workspace": "8.4.6",
     "@types/jest": "24.0.9",
+    "@types/jsonfile": "^5.0.0",
     "@types/node": "~8.9.4",
     "codelyzer": "~5.0.1",
     "core-js": "^2.5.4",
@@ -103,5 +104,8 @@
     "typescript": "~3.4.5",
     "wait-on": "^3.3.0",
     "zone.js": "^0.9.1"
+  },
+  "dependencies": {
+    "jsonfile": "^5.0.0"
   }
 }
